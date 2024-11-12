@@ -1,0 +1,64 @@
+.home {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f0f8ff;
+  margin-top: 180px; /* Adjust based on header height */
+
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Allow wrapping of cards on smaller screens */
+}
+
+.card-container .card {
+  flex: 1;
+  min-width: 200px; /* Set a minimum width for each card */
+  max-width: 300px; /* Set a maximum width to ensure the card doesn’t grow too wide */
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Media Queries for responsiveness */
+
+/* For devices with screen width less than 1200px */
+@media (max-width: 1199px) {
+  .card-container {
+    gap: 1.5rem; /* Reduce the gap between cards */
+  }
+}
+
+/* For devices with screen width less than 768px (tablets and small screens) */
+@media (max-width: 768px) {
+  .home {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .card-container {
+    gap: 1rem; /* Further reduce gap */
+    justify-content: center; /* Center the cards */
+  }
+
+  .card-container .card {
+    min-width: 180px; /* Adjust minimum card width */
+    max-width: 250px; /* Adjust maximum card width */
+  }
+}
+
+/* For devices with screen width less than 480px (mobiles) */
+@media (max-width: 480px) {
+  .card-container {
+    flex-direction: column; /* Stack the cards vertically */
+    gap: 1rem; /* Reduce the gap further */
+  }
+
+  .card-container .card {
+    min-width: 100%; /* Allow cards to take full width */
+    max-width: 100%; /* Allow cards to take full width */
+  }
+}

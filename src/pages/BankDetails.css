@@ -1,0 +1,71 @@
+.container {
+    margin: -20px;
+    padding: 0;
+  }
+
+
+  .content-section {
+    padding: 20px;
+  }
+  
+  .form-heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-control {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  /* In your BankDetails.css file */
+.custom-text-color {
+    color: #ffffff; /* Replace with your preferred color */
+  }
+  .navmine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* Or space-between / space-around, depending on layout preference */
+    gap: 1rem; /* Optional: adds spacing between items */
+}
+  .itsok{
+    margin-top: 78px;
+  }
+
+  .navbar1 {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 78px;
+    left: 0; /* Ensures it aligns to the left */
+    right: 0; /* Ensures it aligns to the right */
+    margin: 0; /* Removes any extra margin */
+    width: 100%;
+    background-color: #4a90e2;
+    flex-direction: row;
+    -ms-flex-align: center;
+}

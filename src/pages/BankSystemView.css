@@ -1,0 +1,76 @@
+body {
+    background-color: #f4f4f4;
+  }
+  
+  .card {
+    margin: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    flex: 1 1 30%;
+    max-width: 30%;
+    min-width: 250px;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  .container {
+    padding-top: 80px; /* Adjust based on navbar height */
+  }
+  
+  
+  .navmine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* Or space-between / space-around, depending on layout preference */
+    gap: 1rem; /* Optional: adds spacing between items */
+}
+  .itsok{
+    margin-top: 78px;
+  }
+
+  .navbar1 {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 78px;
+    left: 0; /* Ensures it aligns to the left */
+    right: 0; /* Ensures it aligns to the right */
+    margin: 0; /* Removes any extra margin */
+    width: 100%;
+    background-color: #4a90e2;
+    flex-direction: row;
+    -ms-flex-align: center;
+}
+
+.o {
+  margin-top: 80px;
+}
+
+.sad {
+  margin-bottom: 150px;
+}
